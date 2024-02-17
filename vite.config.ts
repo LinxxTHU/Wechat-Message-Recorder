@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import {API_BASE_URL_BUILD} from './src/constants/strings'
+import { API_BASE_URL_BUILD } from './src/constants/strings'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,11 +19,11 @@ export default defineConfig({
     server: {
         host: '0.0.0.0',
         port: 8080,
-        proxy:{
-            '/api':{
+        proxy: {
+            '/api': {
                 target: API_BASE_URL_BUILD,
                 changeOrigin: true,
-                rewrite: path => path.replace(/^\/api/,'')
+                rewrite: path => path.replace(/^\/api/, '')
             }
         }
     }
