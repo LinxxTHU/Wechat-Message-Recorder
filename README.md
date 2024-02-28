@@ -33,15 +33,22 @@ CREATE TABLE `message` (
 
 #### Front-end
 Node.js ≥ 18.0
+
 VUE ≥ 3.3
+
 VITE ≥ 5.0
+
 ***LATEST:*** vue-axios, vue-router, element-plus *(with @element-plus/icons-vue)*
 
 #### Back-end
 Python ≥ 3.9
+
 Flask ≥ 3.0
+
 Flask-CORS ≥ 4.0
+
 Flask-SQLAlchemy ≥ 3.1
+
 PyMySQL ≥ 1.1
 
 ### Run Back-end App
@@ -69,5 +76,5 @@ npm run dev
 
 ### Select images (using keyword `/image/`)
 
-![Failed](assets/demo.png)
+![Failed](assets/demo2.png)
 
